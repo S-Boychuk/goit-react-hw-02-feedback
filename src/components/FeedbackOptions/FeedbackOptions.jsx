@@ -1,13 +1,20 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ options }) => {
+const FeedbackOptions = ({ options, addFeedback }) => {
   return (
     <ul className={css['feedback-options-list']}>
       {options.map(option => {
         return (
-          <li>
-            <button className={css['feedback-options-btn']}>{option}</button>{' '}
+          <li key={option}>
+            <button
+              type="button"
+              name={option}
+              onClick={addFeedback}
+              className={css['feedback-options-btn']}
+            >
+              {option}
+            </button>{' '}
           </li>
         );
       })}
