@@ -36,8 +36,9 @@ ol {
   margin: 50px auto;
   padding: 15px;
   border: 2px solid #36b09f;
-  box-shadow: inset #6ddacb 0 0 10px 0px, #6ddacb 0 0 30px 5px;
   border-radius: 15px;
+  box-shadow: inset #6ddacb 0 0 10px 0px, #6ddacb 0 0 30px 5px;
+
   text-align: center;
   background-color: #c566d1ce;
   color: azure;

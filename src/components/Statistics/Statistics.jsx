@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
 const Statistics = ({ feedbacks, total, positivePercentage }) => {
@@ -17,6 +17,12 @@ const Statistics = ({ feedbacks, total, positivePercentage }) => {
       </li>
     </ul>
   );
+};
+
+Statistics.propTypes = {
+  feedbacks: PropTypes.arrayOf(PropTypes.array).isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;

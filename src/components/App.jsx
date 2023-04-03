@@ -4,7 +4,7 @@ import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Notification from 'Notification/Notification';
 
-export class App extends Component {
+class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -57,3 +57,5 @@ export class App extends Component {
     );
   }
 }
+
+export default App;
