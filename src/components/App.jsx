@@ -2,7 +2,7 @@ import { Fragment, Component } from 'react';
 import Section from './Section/Section';
 import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-import Notification from 'Notification/Notification';
+import Notification from './Notification/Notification';
 
 class App extends Component {
   state = {
@@ -11,8 +11,7 @@ class App extends Component {
     bad: 0,
   };
 
-  addFeedback = e => {
-    const name = e.target.name;
+  addFeedback = name => {
     this.setState(prevState => ({
       [name]: prevState[name] + 1,
     }));

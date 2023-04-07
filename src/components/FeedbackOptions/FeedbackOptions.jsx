@@ -10,11 +10,11 @@ const FeedbackOptions = ({ options, addFeedback }) => {
             <button
               type="button"
               name={option}
-              onClick={addFeedback}
+              onClick={() => addFeedback(option)}
               className={css['feedback-options-btn']}
             >
               {option}
-            </button>{' '}
+            </button>
           </li>
         );
       })}
